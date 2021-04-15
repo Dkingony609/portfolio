@@ -1,0 +1,159 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    font-size: 15px;
+}
+
+.nav-bar {
+    background: white;
+    box-shadow: 0px 1px 1px 1px #e5e5e5;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav-bar h2 {
+    color: darkblue;
+    font-weight: bold;
+}
+
+.nav-links {
+    margin-top: 25px;
+    margin-right: 2em;
+}
+
+.nav-links a {
+    color: black;
+    border-radius: 5px;
+    font-size: 17px;
+    text-decoration: none;
+    margin-right: 0.5em; 
+}
+
+.nav-links a:hover {
+    color: black;
+    text-decoration: underline darkblue 3px;
+    transition: ease-in 0.2s blue;
+    transition-delay: 0.5s;
+}
+
+.nav-links a:active {
+    text-decoration: underline blue 3px;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo-img {
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    margin: auto;
+    width: 80%;
+    padding: 3em;
+    justify-content: space-between;
+}
+
+.right-pane {
+    padding: 30px;
+    font-size: 16px;
+}
+
+.right-pane h2 {
+    font-size: 25px;
+}
+
+.profile {
+    padding: 15px;
+    width: 50%;
+    border-radius: 5px;
+    border-width: 0;
+    outline: 0;
+    cursor: pointer;
+    margin-top: 20px;
+    background: darkblue;
+}
+
+.profile:hover {
+    background: midnightblue;
+    color: darkblue;
+    transition: ease-in 0.5s;
+
+}
+
+.profile a {
+    text-decoration: none;
+    font-size: 17px;
+    color: white;
+}
+
+.footer {
+    background: whitesmoke;
+    position: fixed;
+    text-align: center;
+    color: black;
+    width: 100%;
+    font-weight: bold;
+    margin-top: 2em;
+    bottom: 0;
+}
+
+@media screen and (max-width: 1200px) {
+
+    main {
+        display: flex;
+        margin-top: -3.5em;
+    }
+
+    .left-pane img {
+        margin-top: 10em;
+        height: 300px;
+    }
+
+    .profile {
+        width: 50%;
+    }
+
+    .footer {
+        position: fixed;  
+    }
+}
+
+@media screen and (max-width: 949px) {
+    main {
+        display: flex;
+    }
+
+    .profile {
+        width: 60%;
+    }
+
+    .footer {
+        position: fixed;  
+    }
+}
+
+@media screen and (max-width: 882px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .profile {
+        text-align: center;
+        width: 100%;
+    }
+
+    .left-pane {
+        text-align: center;
+    }
+
+    .left-pane img {
+        height: 300px;
+        margin-top: -1em;
+    }
+}

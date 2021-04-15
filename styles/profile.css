@@ -1,0 +1,149 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    font-size: 15px;
+}
+
+.nav-bar {
+    background: white;
+    box-shadow: 0px 1px 1px 1px #e5e5e5;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav-bar h2 {
+    color: darkblue;
+    font-weight: bold;
+}
+
+.nav-links {
+    margin-top: 25px;
+    margin-right: 2em;
+}
+
+.nav-links a {
+    color: black;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: black;
+    text-decoration: underline darkblue 3px;
+    transition: ease-in 0.2s blue;
+    transition-delay: 0.5s;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo-img {
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    margin: auto;
+    width: 80%;
+    padding: 3em;
+}
+
+.profile_right_pane img {
+    border-radius: 3px;
+    box-shadow: 0px 1px 1px 1px #e5e5e5;
+    margin-left: 4em;
+}
+
+.biodata {
+    padding-left: 30px;
+    font-size: 16px;
+}
+
+.biodata p {
+    background: whitesmoke;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px #e5e5e5;
+}
+
+.biodata p:hover {
+    box-shadow: 0px 1px 1px 1px #e5e5e5;
+    cursor: pointer;
+    transition: ease-out 0.3s;
+}
+
+
+label {
+    font-weight: bold;
+}
+
+.footer {
+    background: whitesmoke;
+    position: absolute;
+    text-align: center;
+    color: black;
+    width: 100%;
+    font-weight: bold;
+    margin-top: 2em;
+}
+
+
+@media screen and (max-width: 1200px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .profile_right_pane img {
+        text-align: center;
+        margin-left: 15em;
+        margin-top: 2em;
+    }
+
+    .biodata {
+        margin-top: 2em;
+        margin-left: -2em;
+    }
+}
+
+@media screen and (max-width: 949px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .profile_right_pane img {
+        text-align: center;
+        margin-left: 10em;
+        margin-top: 2em;
+    }
+
+    .biodata {
+        margin-top: 2em;
+        margin-left: -2em;
+    }
+}
+
+@media screen and (max-width: 882px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .profile_right_pane img {
+        text-align: center;
+        margin-left: -0.5em;
+        margin-top: 2em;
+    }
+
+    .biodata {
+        margin-top: 2em;
+        margin-left: -2em;
+    }
+
+}
